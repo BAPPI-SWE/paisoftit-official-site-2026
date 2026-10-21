@@ -9,6 +9,8 @@ import Member6 from '../../../assets/member6.png';
 import Member7 from '../../../assets/member7.png';
 import Member8 from '../../../assets/md.png';
 import Member9 from '../../../assets/bappi.png';
+import Member10 from '../../../assets/member10.jpeg';
+import Member11 from '../../../assets/member11.jpeg';
 
 
 
@@ -16,6 +18,8 @@ const Team = () => {
   const teamMembers = [
     { id: 1, name: 'Md. Kamrul Hasan Kabir', role: 'Founder & CEO', image: Member1 },
     { id: 2, name: 'Md. Kawsar', role: 'Chief Technology Officer (CTO)', image: Member2 },
+    { id: 10, name: 'Md. Nazrul Islam', role: 'Director - Public Relations & Government Affairs', image: Member10 },
+    { id: 11, name: 'Md Ataour Rhaman', role: 'Senior Advisor', image: Member11 },
     { id: 3, name: 'Shahadat H Sourov', role: 'Project Manager', image: Member3 },
     { id: 4, name: 'Md. Asaduzzaman Asad', role: 'Senior Software Engineer', image: Member4 },
     { id: 5, name: 'Muhammad Sahinur Salafee', role: 'Senior Developer', image: Member5 },
@@ -44,7 +48,7 @@ const Team = () => {
   // পেজ পরিবর্তন করার ফাংশন
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
-    // নতুন পেজে যাওয়ার পর সেই পেজের প্রথম মেম্বারকে অটোমেটিক সিলেক্ট দেখাবে
+    // নতুন পেজে যাওয়ার পর সেই পেজের প্রথম মেম্বারকে অটোমেটিক সিলেক্ট দেখাবে
     const firstMemberOfPage = teamMembers[(pageNumber - 1) * itemsPerPage];
     if (firstMemberOfPage) {
       setActiveImage(firstMemberOfPage.image);
