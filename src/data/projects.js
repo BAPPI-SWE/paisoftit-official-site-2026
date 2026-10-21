@@ -2,6 +2,10 @@
 // Data taken from the PAISOFT IT Company Profile (v1.0, October 2026).
 // To add a project: copy one object, give it a unique `id`, and fill the fields.
 //
+// logo: put the image in  public/project-logos/  and write its path here,
+//       e.g. '/project-logos/my-app.png'. If the file is missing, the coloured
+//       initials are shown instead, so the site never breaks.
+//
 // status values:
 //   'completed'   -> Completed & handed over
 //   'live'        -> Live in production
@@ -25,6 +29,7 @@ export const projects = [
     group: 'delivered',
     featured: true,
     accent: '#0d9488',
+    logo: '/project-logos/velora-cotton.jpg',
     summary: 'E-commerce platform for a premium cotton apparel brand.',
     client: 'Velora Cotton — premium cotton apparel brand',
     sector: 'Retail & e-commerce',
@@ -50,6 +55,7 @@ export const projects = [
     group: 'delivered',
     featured: true,
     accent: '#ea580c',
+    logo: '/project-logos/foodish-bd.jpeg',
     summary: 'Online food delivery platform running a complete food delivery ecosystem.',
     client: 'Foodish BD',
     sector: 'Food delivery',
@@ -80,6 +86,7 @@ export const projects = [
     group: 'product',
     featured: true,
     accent: '#2563eb',
+    logo: '/project-logos/sheba-pai.png',
     summary:
       'Digital health-tech platform that connects patients with verified healthcare providers for home-care and medical services.',
     client: 'Proprietary product of PAISOFT IT',
@@ -178,12 +185,16 @@ export const projects = [
     title: 'EasyFood',
     category: 'Mobile App',
     platform: 'Android',
-    status: 'development',
-    group: 'ongoing',
+    status: 'live',
+    group: 'delivered',
+    featured: true,
     accent: '#dc2626',
-    summary: 'Food ordering mobile application.',
+    logo: '/project-logos/easyfood.jpg',
+    summary: 'Food ordering mobile application, live on Google Play.',
     sector: 'Food',
-    statusNote: 'Currently in development',
+    statusNote: 'Production live (Google Play)',
+    // Paste the Play Store link inside the quotes below, e.g.
+    // links: [{ label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=...' }],
     links: [],
   },
 ];

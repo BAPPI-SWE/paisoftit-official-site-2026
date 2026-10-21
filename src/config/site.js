@@ -12,7 +12,7 @@ export const siteConfig = {
   stats: [
     { value: '15', label: 'In-house Team Members' },
     { value: '5', label: 'Projects Completed' },
-    { value: '6', label: 'Ongoing Projects' },
+    { value: '5', label: 'Ongoing Projects' },
     { value: '6', label: 'Service Lines' },
   ],
   legal: {

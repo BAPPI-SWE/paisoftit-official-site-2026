@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router';
 import { ArrowUpRight, Globe, Smartphone, MonitorSmartphone, ExternalLink } from 'lucide-react';
 import { STATUS } from '../../data/projects';
@@ -44,7 +44,26 @@ const initialsOf = (title) =>
     .toUpperCase();
 
 export const ProjectMark = ({ project, size = 'md' }) => {
+  const [logoFailed, setLogoFailed] = useState(false);
   const dims = size === 'lg' ? 'w-16 h-16 text-xl' : 'w-12 h-12 text-base';
+
+  // Show the app logo when one is set and the image loads; otherwise fall back to initials.
+  if (project.logo && !logoFailed) {
+    return (
+      <div
+        className={`${dims} shrink-0 rounded-2xl overflow-hidden bg-white ring-1 ring-slate-200 shadow-md`}
+        style={{ boxShadow: `0 8px 20px -8px ${project.accent}66` }}
+      >
+        <img
+          src={project.logo}
+          alt={`${project.title} logo`}
+          className="w-full h-full object-cover"
+          onError={() => setLogoFailed(true)}
+        />
+      </div>
+    );
+  }
+
   return (
     <div
       className={`${dims} shrink-0 rounded-2xl flex items-center justify-center font-extrabold text-white shadow-md`}

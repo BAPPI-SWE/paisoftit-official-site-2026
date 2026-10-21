@@ -23,7 +23,7 @@ const ProjectsShowcase = () => {
           subtitle="Real platforms in production, our own products, and the work our team is developing right now."
         />
 
-        <div className="reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="reveal grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {featured.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
