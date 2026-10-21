@@ -7,7 +7,8 @@ import Hero from './hero/Hero';
 import AboutUs from './about/AboutUs';
 import AboutCompany from './about/AboutCompany';
 import IndustryFootprint from './industries/IndustryFootprint';
-import ClientsSection from './clients/ClientsSection';
+import ProjectsShowcase from './projects/ProjectsShowcase';
+import DeliveryApproach from './delivery/DeliveryApproach';
 import Support from './support/Support';
 import Team from './team/Team';
 
@@ -60,8 +61,9 @@ const Home = () => {
         </div>
       </section>
 
+      <ProjectsShowcase />
       <IndustryFootprint />
-      <ClientsSection />
+      <DeliveryApproach />
       <Support />
       <Team />
 

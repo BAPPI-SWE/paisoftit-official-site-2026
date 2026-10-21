@@ -5,10 +5,10 @@ import { Link } from 'react-router';
 
 const AboutCompany = () => {
   const points = [
+    'ERP & Business Systems',
     'Web & Mobile Applications',
-    'E-commerce & Online Stores',
-    'POS & Business Systems',
-    'Ongoing Support & Updates',
+    'E-commerce & POS Platforms',
+    'Long-term Support & Maintenance',
   ];
 
   return (
@@ -36,9 +36,10 @@ const AboutCompany = () => {
           </h2>
 
           <p className="text-lg leading-8 text-slate-700 max-w-7xl">
-            We&apos;re a team of developers, designers, and problem-solvers. For over
-            10 years, we&apos;ve helped businesses turn their ideas into reliable software — from
-            clothing brands going online to shops needing custom systems.
+            PAISOFT IT is a Dhaka-based software engineering company. We work as a single team of
+            developers, designers and problem-solvers who take a product from first requirement to
+            launch — and stay with it afterwards. Alongside client work, we build and run our own
+            products, so we understand real users and real production operations.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -62,8 +63,8 @@ const AboutCompany = () => {
           </div>
 
           <div className="float-badge absolute -bottom-4 left-4 sm:left-8 card-highlight bg-white text-slate-900 p-6 max-w-[260px] border-brand-200! shadow-xl">
-            <p className="text-3xl font-bold text-slate-900">10+</p>
-            <p className="text-sm text-slate-700 mb-3">Years building software for businesses</p>
+            <p className="text-3xl font-bold text-slate-900">15</p>
+            <p className="text-sm text-slate-700 mb-3">In-house team members working from our Dhaka office</p>
             <Link
               to="/contact"
               className="inline-flex items-center gap-1 bg-white text-brand-700 text-xs font-bold px-3 py-2 rounded-full hover:bg-blue-50 transition"

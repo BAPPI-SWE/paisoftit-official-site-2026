@@ -17,6 +17,9 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'services', element: <Services /> },
+      { path: 'projects', element: <CaseStudies /> },
+      { path: 'projects/:id', element: <CaseStudy /> },
+      // Old links keep working
       { path: 'case-studies', element: <CaseStudies /> },
       { path: 'case-studies/:id', element: <CaseStudy /> },
       { path: 'blog', element: <Blog /> },

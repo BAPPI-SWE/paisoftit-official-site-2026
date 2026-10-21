@@ -46,18 +46,18 @@ export const services = [
     id: '5',
     title: 'ERP Solution',
     description:
-      'Innovative AI projects involving Machine Learning and Deep Learning to drive data-centric decisions.',
+      'Integrated systems connecting finance, HR & payroll, inventory, procurement and reporting on one database — configured to each organisation’s workflows.',
     icon: 'Cpu',
     image: algorithmIcon,
-    slug: 'ml-deep-learning',
+    slug: 'erp-solution',
   },
   {
     id: '6',
-    title: 'Mobile APP Development',
+    title: 'Mobile App Development',
     description:
-      'Robust backend development using Python Flask for high-performance APIs and microservices.',
+      'Native Android and cross-platform mobile apps connected to secure back-end APIs — for customers, field staff and citizens.',
     icon: 'Terminal',
     image: mobileAppIcon,
-    slug: 'flask-api-development',
+    slug: 'mobile-app-development',
   },
 ];
